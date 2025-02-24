@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bantuan</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+    <style>
+
+        body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        padding: 10px;
+    }
+    
+    .section {
+        padding: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" class="nav-link">Bantuan</a></li>
+                </ul>
+            </nav>
+            <button class="button">Keluar</button>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section">
+            <div class="container">
+                <h2>Sumber Bantuan</h2>
+                <ul>
+                    <li>Layanan Darurat: 112 atau 119</li>
+                    <li>Bicarakan dengan Seseorang: Keluarga, Teman, atau Psikolog</li>
+                    <li>Bantuan Profesional: Psikolog atau Konselor</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2>Kontak Bantuan</h2>
+                <ul>
+                    <li>Layanan Kesehatan Jiwa 24 Jam: 021-5366 0666 (Jakarta) atau 021-3190 1111 (Bandung)</li>
+                    <li>Kementerian Kesehatan RI: 021-5290 4114</li>
+                    <li>Crisis Text Line: Kirim SMS ke 119</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Bantuan. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
