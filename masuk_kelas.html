@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Kelas Bahasa Arab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: sans-serif; 
+    }
+    
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .header {
+      background-color: rgb(146, 148, 146);
+      font-size: 20px;
+      text-align: center;
+      padding: 20px;
+      left: 0;
+    }
+    
+    #.header h1{
+      background-color: black;
+      color: white; /* Text color white for better contrast */
+      margin: 0; /* Remove default margins */
+      padding: 20px;
+      font-size: 1.5em; /* Use relative font sizing */
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%; 
+      z-index: 100;
+    }
+
+    .container {
+      background-color: white;
+      padding: 20px; /* Adjusted padding */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 60px; /* Adjust top margin to prevent overlap */
+      margin-bottom: 20px; /* Add bottom margin */
+    }
+
+    .button-container {
+      text-align: center;
+      margin-bottom: 20px; /* Add margin below the button */
+    }
+
+    .tombol-masuk {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px; /* Adjusted padding */
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block; /* Make button a block element */
+      margin: 0 auto; /* Center the button */
+      width: fit-content; /* Adjust width to content */
+    }
+
+    .tombol-masuk:hover {
+      background-color: #0056b3;
+    }
+
+    .h3{
+      font-size: 1.2em; /* Use relative font sizing */
+      padding: 10px; /* Adjusted padding */
+      text-align: center;
+      margin-bottom: 20px; /* Add margin below the heading */
+    }
+
+    .p {
+      font-size: 1em; /* Use relative font sizing */
+      text-align: left;
+      margin-bottom: 10px; /* Add margin between paragraphs */
+    }
+
+    .p button {
+      background-color: #007bff;
+      color: white;
+      padding: 8px 16px; /* Adjusted padding */
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .p button:hover {
+      background-color: #0056b3;
+    }
+
+    .header-bottom { 
+      background-color: blue;
+      color: white;
+      padding: 18px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .header-bottom a {
+      color: white;
+      text-decoration: none;
+      margin: 15px;
+      padding: 15px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Media query for smaller screens (e.g., mobile) */
+    @media (max-width: 767px) {
+      .container {
+        padding: 15px; /* Reduce padding on smaller screens */
+      }
+      .tombol-masuk {
+        width: 90%; /* Make button full width on smaller screens */
+      }
+    }
+    
+    .kolom {
+          background-color: #cccc; /* Diubah menjadi abu-abu muda */
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          margin-top: 60px;
+          margin-bottom: 20px;
+         }
+    
+    .h1 {
+      color: blue;
+    }
+    
+    .text {
+      text-align: center;
+      font-size: 20px;
+    }
+    
+    .i {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .scroll-effect {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s, transform 0.6s;
+    }
+
+  .scroll-effect.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="fade-in">
+    <header class="header">
+    <h1 class="">Selamat Datang di Kelas Bahasa Arab</h1>
+    </header>
+  </div>
+
+  <div class="fade-in">
+    <div class="container">
+      <div class="button-container">
+        <a href="https://us06web.zoom.us/j/87540633325" target="_blank">
+          <button class="tombol-masuk">Masuk Kelas</button>
+        </a>
+      </div>
+      <div class="h3">
+        <h3>Belajar Bahasa Arab dari Nol sampai Mahir</h3>
+      </div>
+      <div class="p">
+        <p>Apakah Anda sudah siap untuk mempelajari bahasa Arab?</p>
+        <p>Apakah Anda sudah mempunyai bekal dalam mempelajari bahasa Arab?</p>
+        <p>Jika belum, mari kita mulai sesuai dengan kemampuan Anda.</p>
+      </div>
+    </div> 
+  </div>
+  
+  <div class="scroll-effect">
+    <div style="background-color: #0056b3; padding: 15px; margin: 15px; border-radius: 8px;">
+      <div class="container">
+        <div class="p">
+          <p>Kelas pertama atau dasar untuk pemula.</p>
+          <p>Di dalam kelas ini, Anda akan mempelajari dasar-dasar tentang bahasa Arab.</p>
+          <a href="kelas_pertama.html">
+            <button>Mulai Belajar</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="scroll-effect">
+    <div style="background-color: #0056b3; padding: 15px; margin: 15px; border-radius: 8px;">
+      <div class="container">
+        <div class="p">
+          <p>Kelas kedua (sudah memahami semua dasar-dasar bahasa Arab.</p>didalam Kelas ini anda akan mempelajari tentang ilmu nahwu dan shorof.</p>
+          <p>mari masuk untuk mempelajarinya</p>
+          <a href="#">
+            <button>Mulai Belajar</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div class="scroll-effect">
+    <div style="background-color: #0056b3; padding: 15px; margin: 15px; border-radius: 8px;">
+      <div class="container">
+        <div class="p">
+          <p>Kelas ketiga (sudah memahami semua dasar-dasar nahwu dan shorof.</p>
+          <p>Di dalam kelas ini, Anda akan mempelajari perbedaan pendapat para ulama terkait ilmu nahwu dan ilmu shorof.</p>
+          <p>mari masuk untuk mempelajarinya</p>
+          <a href="#">
+            <button>Mulai Belajar</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  
+  <div class="kolom">
+    <h1 class="h1">
+      7 Alasan Harus Belajar Bahasa Arab
+    </h1>
+    <p>Kenapa mesti belajar bahasa Arab? Apa manfaatnya?
+    </p>
+    <p>Walau kita bukan orang Arab, namun manfaatnya cukup besar jika kita mau mempelajari bahasa Arab.
+    </p>
+    <p>Ini beberapa alasan kenapa kita mesti luangkan waktu untuk belajar bahasa Arab.
+    </p>
+    <h3>pertama:</h3>
+    <p>Keutamaan bahasa Arab amatlah jelas karena bahasa Arab adalah bahasa Al-Qur’an Al-Karim. Cukup alasan inilah yang jadi alasan besar kenapa kita harus mempelajari bahasa Arab. Keistimewaan bahasa Arab disebutkan dalam Al-Qur’an lebih dari sepuluh tempat, di antaranya pada ayat,
+    </p>
+    <p class="text">وَلَقَدْ ضَرَبْنَا لِلنَّاسِ فِي هَذَا الْقُرْآنِ مِنْ كُلِّ مَثَلٍ لَعَلَّهُمْ يَتَذَكَّرُونَ . قُرْآنًا عَرَبِيًّا غَيْرَ ذِي عِوَجٍ لَعَلَّهُمْيَتَّقُونَ
+    </p>
+    <i class="i">"Sesungguhnya telah Kami buatkan bagi manusia dalam Al Quran ini setiap macam perumpamaan supaya mereka dapat pelajaran. (Ialah) Al Quran dalam bahasa Arab yang tidak ada kebengkokan (di dalamnya) supaya mereka bertakwa.”(QS. Az-Zumar: 27-28)
+    </i>
+    <p>Syaikhul Islam Ibnu Taimiyah rahimahullah berkata,
+    </p>
+    <p class="text">
+    اللِّسَانُ العَرَبِي شِعَارُ الإِسْلاَمِ وَأَهْلِهِ
+    </p>
+    <p>“Bahasa Arab adalah syi’ar Islam dan syi’ar kaum muslimin.” Disebutkan dalam Iqtidha’ Shirath Al-Mustaqim.
+    </p>
+    <h3>kedua:</h3>
+    <p>Dengan mempelajari bahasa Arab lebih mudah dalam menghafalkan, memahami, mengajarkan dan mengamalkan isi Al-Qur’an. Dengan modal bahasa Arab akan mudah pula dalam memahami hadits-hadits Nabi shallallahu ‘alaihi wa sallam, menghafalkan, menjelaskan serta mengamalkannya.
+    </p>
+    <h3>ketiga:</h3>
+    <p>Orang yang paham bahasa Arab, terutama paham kaedah-kaedah dalam ilmu nahwu akan semakin mudah memahami Islam daripada yang tidak mempelajarinya sama sekali. Apalagi jika tugas seseorang sebagai penyampai dakwah, menjadi seorang da’i, kyai atau ustadz, tentu lebih urgent lagi mempelajarinya agar mudah memberikan pemahaman agama yang benar pada orang banyak.
+    </p>
+    <h3>keempat:</h3>
+    <p>Orang yang paham bahasa Arab akan mudah menggali ilmu dari ulama secara langsung atau membaca berbagai karya ulama yang sudah banyak tersebar hingga saat ini. Sedangkan yang tidak paham bahasa Arab hanya bisa mengandalkan kitab terjemahan dan itu sifatnya terbatas.
+    </p>
+    <h3>Kelima:</h3>
+    <p>Bahasa Arab itu bahasa yang lembut dan lebih mengenakkan hati, serta menentramkan jiwa.
+    </p>
+    <p>Ibnu Katsir saat menjelaskan surat Yusuf ayat kedua menyatakan,
+    </p>
+    <p class="text">لأن لغة العرب أفصح اللغات وأبينها وأوسعها، وأكثرها تأدية للمعاني التي تقوم بالنفوس</p>
+    <p>“Karena bahasa Arab adalah bahasa yang paling fasih, paling jelas, paling luas (kosakatanya), dan paling banyak mengandung makna yang menentramkan jiwa.”</p>
+    <h3>keenam:</h3>
+    <p>Bahasa Arab adalah bahasa yang paling mulia.</p><br>
+    <p>Ibnu Katsir rahimahullah juga menyatakan,</p>
+    <p class="text">فلهذا أنزلَ أشرف الكتب بأشرف اللغات، على أشرف الرسل، بسفارة أشرف الملائكة، وكان ذلك في أشرف بقاع الأرض، وابتدئ إنزاله في أشرف شهور السنة وهو رمضان، فكمل من كل الوجوه</p>
+    <p>“Karena Al-Qur’an adalah kitab yang paling mulia, diturunkan dengan bahasa yang paling mulia, diajarkan pada Rasul yang paling mulia, disampaikan oleh malaikat yang paling mulia, diturunkan di tempat yang paling mulia di muka bumi, diturunkan pula di bulan yang mulia yaitu bulan Ramadhan. Dari berbagai sisi itu, kita bisa menilai bagaimanakah mulianya kitab suci Al-Qur’an.”</p>
+    <p>Oleh karena itu Allah nyatakan tentang bahasa Arab,</p>
+    <p class="text">إِنَّا أَنزلْنَاهُ قُرْآنًا عَرَبِيًّا لَعَلَّكُمْ تَعْقِلُونَ</p>
+    <i class="i">“Sesungguhnya Kami menurunkannya berupa Al Quran dengan berbahasa Arab, agar kamu memahaminya.” (QS. Yusuf: 2)</i>
+    <h3>ketujuh:</h3>
+    <p>Bahasa Arab adalah bahasa yang lurus, mudah dipahami dan mudah digunakan sebagai hukum bagi manusia.</p>
+    <p>Allah menyatakan sendiri,</p>
+    <p class="text">قُرْآَنًا عَرَبِيًّا غَيْرَ ذِي عِوَجٍ لَعَلَّهُمْ يَتَّقُونَ</p>
+    <i class="i">“(Ialah) Al-Qur’an dalam bahasa Arab yang tidak ada kebengkokan (di dalamnya) supaya mereka bertakwa.” (QS. Az-Zumar: 28)</i>
+    <p>Dalam ayat lain disebutkan</p>
+    <p class="text">وَإِنَّهُ لَتَنْزِيلُ رَبِّ الْعَالَمِينَ (192) نَزَلَ بِهِ الرُّوحُ الْأَمِينُ (193) عَلَى قَلْبِكَ لِتَكُونَ مِنَ الْمُنْذِرِينَ (194) بِلِسَانٍ عَرَبِيٍّ مُبِينٍ (195)</p>
+    <i class="i">“Dan sesungguhnya Al Quran ini benar-benar diturunkan oleh Tuhan semesta alam, dia dibawa turun oleh Ar-Ruh Al-Amin (Jibril), ke dalam hatimu (Muhammad) agar kamu menjadi salah seorang di antara orang-orang yang memberi peringatan, dengan bahasa Arab yang jelas.” (QS. Asy-Syu’ara: 192-195). Sebagaimana disebutkan dalam Zaad Al-Masiir karya Ibnul Jauzi, Al-Qur’an diturunkan dengan bahasa Arab yaitu bahasanya orang Quraisy yang setiap orang mudah memahaminya.</i>
+    <p>juga dalam ayat lain disebutkan,</p>
+    <p class="text">كَذَلِكَ أَنْزَلْنَاهُ حُكْمًا عَرَبِيًّا</p>
+    <i class="i">“Dan demikianlah, Kami telah menurunkan Al Quran itu sebagai peraturan (yang benar) dalam bahasa Arab.” (QS. Ar-Ra’du: 37). Disebutkan dalam Tafsir Al-Jalalain, bahasa Arab digunakan sebagai hukum di tengah-tengah manusia. Dalam Zaad Al-Masiir disebutkan bahwa bahasa Arab bisa digunakan untuk menerangkan hukum-hukum yang wajib.</i>
+    <p>Masih tak tergerak hati Anda untuk mempelajari bahasa yang paling mulia dan dicintai oleh Allah?</p>
+    <p>Semoga Allah mudahkan untuk mempelajari bahasa Arab. Ihrish ‘ala maa yanfa’uk, semangatlah dalam hal yang manfaat untukmu.</p>
+    
+  </div>
+  <br>
+  <br>
+  <div class="header-bottom">
+    <a href="index.html">kembali</a>
+    <a href="bantuan.html" target="_blank" rel="noopener noreferrer">bantuan</a>
+    <a href="https://www.almaany.com/id/dict/ar-id/">Kamus</a>
+  </div>
+
+</body>
+<script>
+      document.addEventListener("DOMContentLoaded", function() {
+    let elements = document.querySelectorAll(".scroll-effect");
+    
+    function checkPosition() {
+        elements.forEach(el => {
+            let position = el.getBoundingClientRect().top;
+            let screenHeight = window.innerHeight;
+            if (position < screenHeight - 100) {
+                el.classList.add("visible");
+            }
+        });
+    }
+    
+    window.addEventListener("scroll", checkPosition);
+    checkPosition();
+  });
+</script>
+</html>
