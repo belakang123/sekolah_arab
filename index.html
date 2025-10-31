@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exa Edu-Smart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-800 to-black font-sans">
+    <!--Navbar-->
+    <header class="fixed top-0 w-full z-50 bg-black bg-opacity-70 backdrop-blur-sm text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex space-x-3">
+                <img src="../assets/logo.jpg" alt="" class="h-7 w-7 object-cover rounded-full">
+                <h1 class="text-1xl font-bold tracking-wide">Exa Edu-Smart</h1>
+            </div>
+        
+            <!-- Hamburger Icon -->
+            <button id="menuToggle" class="md:hidden text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+        
+            <!-- Desktop Menu -->
+            <nav class="space-x-6 hidden md:flex">
+              <a href="../public/masuk.html" class="hover:text-purple-400">Masuk</a>
+              <a href="./public/proses.html" class="hover:text-purple-400">Tentang</a>
+              <a href="./public/kontak.html" class="hover:text-purple-400">Kontak</a>
+              <a href="#" class="hover:text-purple-400">Kamus</a>
+              <a href="./public/room-chat.html" class="hover:text-purple-400">Chat</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden flex-col bg-black bg-opacity-90 px-4 py-6 space-y-4 text-center">
+            <a href="../public/masuk.html" class="block text-white hover:text-purple-400">Masuk</a>
+            <a href="./public/proses.html" class="block text-white hover:text-purple-400">Tentang</a>
+            <a href="./public/kontak.html" class="block text-white hover:text-purple-400">Kontak</a>
+            <a href="#" class="block text-white hover:text-purple-400">Kamus</a>
+            <a href="./public/room-chat.html" class="block text-white hover:text-purple-400">Chat</a>
+        </div>
+    </header>
+
+    <main class="bg-gradient-to-br from-green-800 to-white-100 min-h-screen flex items-center justify-center px-6 py-12">
+        <div class="max-w-3xl text-center text-white space-y-6" data-aos="fade-up">
+          <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-lg">
+            🌟 Inspirasi
+          </h1>
+          <h2 id="typewriter" class="text-xl md:text-2xl text-purple-300 font-medium"></h2>
+          <p class="text-base md:text-lg leading-relaxed text-gray-200">
+            Meraih kemudahan dan kesenangan belajar bahasa Arab dengan metode modern, interaktif, dan penuh motivasi.
+            Mulai perjalananmu hari ini untuk menguasai bahasa yang penuh sejarah dan makna.
+          </p>
+          <a href="./public/proses.html" class="inline-block mt-4 px-6 py-3 bg-purple-600 hover:bg-purple-800 text-white font-semibold rounded-full shadow-md transition duration-300">
+            Kumpulan Motivasi
+          </a>
+        </div>
+      </main>
+
+      <section class="py-16 px-6 text-white">
+        <div class="max-w-4xl mx-auto text-center space-y-8" data-aos="fade-right">
+          <h2 class="text-3xl md:text-4xl font-bold text-green-700">🌍 Kenapa Belajar Bahasa Arab?</h2>
+          <p class="text-lg leading-relaxed">
+            Bahasa Arab bukan hanya bahasa Al-Qur’an, tapi juga pintu menuju pemahaman budaya, sejarah, dan ilmu Islam yang kaya. Dengan menguasainya, kamu bisa:
+          </p>
+          <ul class="text-left list-disc list-inside space-y-2">
+            <li>Mengakses kitab-kitab klasik dan tafsir langsung dari sumbernya</li>
+            <li>Memperdalam pemahaman Al-Qur’an dan Hadis</li>
+            <li>Berkomunikasi dengan penutur asli di dunia Arab</li>
+            <li>Menumbuhkan kecintaan terhadap ilmu dan dakwah</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="bg-gradient-to-r from-green-600 to-purple-600 py-16 px-6 text-white">
+        <div class="max-w-3xl mx-auto text-center space-y-6" data-aos="fade-left">
+          <h2 class="text-3xl md:text-4xl font-bold">🧠 Latihan Kosakata Harian</h2>
+          <p class="text-lg">Tingkatkan hafalanmu dengan satu kata baru setiap hari!</p>
+          <div class="bg-gray-400 hover:bg-white text-black rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-2">كِتَابٌ (kitābun)</h3>
+            <p class="mb-4">Artinya: Buku</p>
+            <button class="bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-full transition duration-300">
+              Saya Hafal!
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fitur Pembelajaran -->
+<section class="py-16 px-6 text-gray-800">
+    <div class="max-w-5xl mx-auto text-center space-y-10" data-aos="fade-down">
+      <h2 class="text-3xl md:text-4xl font-bold text-green-700 animate-bounce">📚 Fitur Unggulan</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="bg-green-300 p-6 rounded-lg shadow hover:shadow-lg transition hover:bg-blue-300">
+          <h3 class="text-xl font-semibold text-green-600 mb-2">Video pembelajaran</h3>
+          <p>Setiap pembelajaran nahwu terdapat video untuk memudahkan </p>
+        </div>
+        <div class="bg-green-300 p-6 rounded-lg shadow hover:shadow-lg transition hover:bg-blue-300">
+          <h3 class="text-xl font-semibold text-green-600 mb-2">Modul Nahwu</h3>
+          <p>Modul khusus untuk memahami struktur kalimat Arab melalui ilmu nahwu dan i’rab.</p>
+        </div>
+        <div class="bg-green-300 p-6 rounded-lg shadow hover:shadow-lg transition hover:bg-blue-300">
+          <h3 class="text-xl font-semibold text-green-600 mb-2">Room Chat</h3>
+          <p>.Pantau progres belajar, statistik hafalan, dan pencapaian harian, serta nikmati fitur chat grup untuk berdiskusi, bertanya, dan saling menyemangati dalam belajar bahasa Arab.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimoni Pengguna -->
+  <section class="bg-gradient-to-r from-purple-600 to-green-500 py-16 px-6 text-gray-200">
+    <div class="max-w-4xl mx-auto text-center space-y-10" data-aos="flip-up">
+      <h2 class="text-3xl md:text-4xl font-bold animate-bounce">💬 Testimoni Pengguna</h2>
+      <div class="space-y-6">
+        <blockquote class="italic">“Aplikasi ini membuat saya jatuh cinta pada bahasa Arab. Metodenya menyenangkan dan sangat Islami.”</blockquote>
+        <blockquote class="italic">“Dashboard-nya keren! Saya bisa lihat perkembangan hafalan saya setiap hari.”</blockquote>
+        <blockquote class="italic">“Belajar nahwu jadi mudah berkat fitur interaktif dan penjelasan yang jelas.”</blockquote>
+      </div>
+    </div>
+  </section>
+  
+  <section class="bg-gradient-to-r from-purple-600 to-green-500 py-16 px-6 text-gray-200">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      
+      <!-- Konten Teks -->
+      <div class="text-center md:text-left space-y-6" data-aos="fade-right">
+        <h2 class="text-3xl md:text-4xl font-bold">🌱 Dukung Dakwah Digital</h2>
+        <p class="text-gray-300 text-lg">
+          Bantu kami terus mengembangkan aplikasi ini agar lebih banyak orang bisa belajar bahasa Arab dengan mudah.
+        </p>
+        <a href="https://link-donasi.com" target="_blank" class="inline-block bg-green-700 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-full transition duration-300">
+          Donasi Sekarang
+        </a>
+      </div>
+  
+      <!-- Poster Donasi -->
+      <div class="flex justify-center">
+        <img src="../assets/perkotaan.jpg" alt="Poster Donasi" class="rounded-lg shadow-lg w-full max-w-md" data-aos="fade-left">
+      </div>
+  
+    </div>
+  </section>
+    
+
+    <footer class="bg-gray-900 text-gray-400 py-10">
+        <div class="mb-20">
+            <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+                <!-- Branding -->
+                <div>
+                  <h2 class="text-xl font-bold text-white mb-2">Exa Edu-Smart</h2>
+                  <p class="text-sm">Web pembelajaran bahasa arab</p>
+                </div>
+            
+                <!-- Social Media -->
+                <div>
+                  <h3 class="text-white font-semibold mb-4">Terhubung</h3>
+                  <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="mailto:belajarhost899@gmail.com" class="hover:text-white transition">
+                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 13.065l-11.99-7.065v13.065h23.98v-13.065l-11.99 7.065zm11.99-9.065h-23.98l11.99 7.065 11.99-7.065z"/>
+                      </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="hover:text-white transition">
+                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0 1.837c-3.17 0-3.548.012-4.796.07-1.042.048-1.61.218-1.985.362-.5.195-.857.43-1.233.806-.376.376-.611.733-.806 1.233-.144.375-.314.943-.362 1.985-.058 1.248-.07 1.626-.07 4.796s.012 3.548.07 4.796c.048 1.042.218 1.61.362 1.985.195.5.43.857.806 1.233.376.376.733.611 1.233.806.375.144.943.314 1.985.362 1.248.058 1.626.07 4.796.07s3.548-.012 4.796-.07c1.042-.048 1.61-.218 1.985-.362.5-.195.857-.43 1.233-.806.376-.376.611-.733.806-1.233.144-.375.314-.943.362-1.985.058-1.248.07-1.626.07-4.796s-.012-3.548-.07-4.796c-.048-1.042-.218-1.61-.362-1.985-.195-.5-.43-.857-.806-1.233-.376-.376-.733-.611-1.233-.806-.375-.144-.943-.314-1.985-.362-1.248-.058-1.626-.07-4.796-.07zm0 4.838a5.002 5.002 0 100 10.004 5.002 5.002 0 000-10.004zm0 8.167a3.165 3.165 0 110-6.33 3.165 3.165 0 010 6.33zm6.406-8.845a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/>
+                      </svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="hover:text-white transition">
+                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.954 4.569c-.885.392-1.83.656-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.949.555-2.005.959-3.127 1.184-.897-.959-2.178-1.555-3.594-1.555-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124-4.087-.205-7.713-2.164-10.141-5.144-.422.722-.666 1.561-.666 2.475 0 1.708.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.229-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.6 3.419-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 14-7.496 14-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Line -->
+      <div class="mt-10 text-center text-sm text-gray-500 border-t border-gray-700 pt-4">
+        &copy; 2025 Exa Team. 
+        <a href="https://share.google/OTMCqaAea3aOcWK6S" class="text-semibold text-white hover:text-green-400">
+          Hak cipta dilindungi.
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal Donasi -->
+  <div id="donationModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg shadow-xl max-w-md w-full p-6 text-center relative">
+      <button onclick="closeDonation()" class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-xl font-bold">&times;</button>
+      <img src="../assets/logo.jpg" alt="Poster Donasi" class="mx-auto mb-4 rounded-md shadow-md">
+      <h2 class="text-2xl font-semibold text-green-700 mb-2">Dukung Dakwah Digital!</h2>
+      <p class="text-gray-700 mb-4">Bantu kami menyebarkan ilmu dan inspirasi Islami melalui donasi Anda. Setiap kontribusi sangat berarti.</p>
+      <a href="https://link-donasi.com" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-full transition duration-300">
+        Donasi Sekarang
+      </a>
+    </div>
+  </div>
+  
+  <script src="./js/donasi.js"></script>
+  <script src="./js/mobile-menu.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+          const text = "Dalam bahasa Arab";
+          const target = document.getElementById("typewriter");
+          let i = 0;
+      
+          function type() {
+            if (i < text.length) {
+              target.innerHTML += text.charAt(i);
+              i++;
+              setTimeout(type, 80);
+            }
+          }
+      
+          type();
+        });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
