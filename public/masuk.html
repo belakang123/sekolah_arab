@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda | Exa Edu-Smart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-800 to-black font-sans">
+    <!--Navbar-->
+    <header class="fixed top-0 w-full z-50 bg-black bg-opacity-70 backdrop-blur-sm text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex space-x-3">
+                <img src="../assets/logo.jpg" alt="" class="h-7 w-7 object-cover rounded-full">
+                <h1 class="text-1xl font-bold tracking-wide">Exa Edu-Smart</h1>
+            </div>
+        
+            <!-- Hamburger Icon -->
+            <button id="menuToggle" class="md:hidden text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+        
+            <!-- Desktop Menu -->
+            <nav class="space-x-6 hidden md:flex">
+              <a href="../index.html" class="hover:text-purple-400">Beranda</a>
+              <a href="../public/bantuan.html" class="hover:text-purple-400">Bantuan</a>
+              <a href="#" class="hover:text-purple-400">kontak</a>
+              <a href="#" class="hover:text-purple-400">kamus</a>
+              <a href="../public/room-chat.html" class="hover:text-purple-400">Chat</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden flex-col bg-black bg-opacity-90 px-4 py-6 space-y-4 text-center">
+            <a href="../index.html" class="block text-white hover:text-purple-400">Beranda</a>
+            <a href="../public/bantuan.html" class="block text-white hover:text-purple-400">Bantuan</a>
+            <a href="#" class="block text-white hover:text-purple-400">Kamus</a>
+            <a href="#" class="block text-white hover:text-purple-400">Kontak</a>
+            <a href="../public/room-chat.html" class="block text-white hover:text-purple-400">Chat</a>
+        </div>
+    </header>
+
+
+      <main class="min-h-screen text-white flex items-center justify-center px-6 py-16" role="main" aria-label="Halaman Masuk Kelas Bahasa Arab">
+          <section class="max-w-3xl text-center space-y-6" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight drop-shadow-lg">
+              🌟 Selamat Datang di Kelas Bahasa Arab
+            </h1>
+            <h3 class="text-xl md:text-2xl text-purple-300 font-medium">
+              Belajar Bahasa Arab dari Nol sampai Mahir
+            </h3>
+            <div class="text-base md:text-lg text-gray-200 space-y-3">
+              <p>Apakah Anda sudah siap untuk mempelajari bahasa Arab?</p>
+              <p>Apakah Anda sudah mempunyai bekal dalam mempelajari bahasa Arab?</p>
+              <p>Jika belum, mari kita mulai sesuai dengan kemampuan Anda.</p>
+            </div>
+            <a href="#mulai" class="inline-block mt-6 px-6 py-3 bg-purple-600 hover:bg-purple-800 text-white font-semibold rounded-full shadow-md transition duration-300">
+              Mulai Belajar
+            </a>
+          </section>
+        </main>
+
+        <section class="bg-gray-100 py-16 px-6">
+          <div class="max-w-6xl mx-auto text-center mb-12" data-aos="fade-down">
+            <h2 class="text-4xl font-bold text-green-700 mb-4">📘 Pilih Kelas Bahasa Arab</h2>
+            <p class="text-gray-600 text-lg">Mulai dari dasar hingga pemahaman mendalam tentang nahwu dan shorof</p>
+          </div>
+        
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Kelas Pertama -->
+            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300 transform hover:-translate-y-1 hover:bg-gray-300" data-aos="fade-right">
+              <div class="text-5xl text-green-500 mb-4">🧑‍🏫</div>
+              <h3 class="text-2xl font-semibold text-green-700 mb-2">Kelas Pemula</h3>
+              <p class="text-gray-700 mb-4">Pelajari dasar-dasar bahasa Arab secara bertahap dan menyenangkan.</p>
+              <a href="./proses.html" class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-5 py-2 rounded-full transition duration-300">
+                Mulai Belajar
+              </a>
+            </div>
+        
+            <!-- Kelas Kedua -->
+            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300 transform hover:-translate-y-1 hover:bg-gray-300" data-aos="zoom-in">
+              <div class="text-5xl text-purple-500 mb-4">📖</div>
+              <h3 class="text-2xl font-semibold text-purple-700 mb-2">Kelas Nahwu & Shorof</h3>
+              <p class="text-gray-700 mb-4">Mendalami struktur kalimat Arab melalui ilmu nahwu dan shorof.</p>
+              <a href="./proses.html" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold px-5 py-2 rounded-full transition duration-300">
+                Mulai Belajar
+              </a>
+            </div>
+        
+            <!-- Kelas Ketiga -->
+            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300 transform hover:-translate-y-1 hover:bg-gray-300" data-aos="fade-left">
+              <div class="text-5xl text-yellow-500 mb-4">🧠</div>
+              <h3 class="text-2xl font-semibold text-yellow-700 mb-2">Kelas Ulama & Pendapat</h3>
+              <p class="text-gray-700 mb-4">Telusuri perbedaan pendapat ulama dalam ilmu nahwu dan shorof secara mendalam.</p>
+              <a href="./proses.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-5 py-2 rounded-full transition duration-300">
+                Mulai Belajar
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-16 px-6 text-gray-800">
+          <div class="max-w-5xl mx-auto space-y-10">
+            <h2 class="text-4xl font-bold text-green-700 text-center" data-aos="zoom-in">📚 7 Alasan Harus Belajar Bahasa Arab</h2>
+        
+            <!-- Alasan 1 -->
+            <div class="space-y-4" data-aos="zoom-in">
+              <h3 class="text-2xl font-semibold text-green-600">1. Bahasa Al-Qur’an</h3>
+              <p>Bahasa Arab adalah bahasa Al-Qur’an Al-Karim. Keistimewaannya disebutkan dalam Al-Qur’an lebih dari sepuluh tempat.</p>
+              <blockquote class="bg-green-50 border-l-4 border-green-500 p-4 text-gray-700">
+                وَلَقَدْ ضَرَبْنَا لِلنَّاسِ فِي هَذَا الْقُرْآنِ مِنْ كُلِّ مَثَلٍ... قُرْآنًا عَرَبِيًّا غَيْرَ ذِي عِوَجٍ لَعَلَّهُمْ يَتَّقُونَ
+                <br>
+                <span class="block mt-2">“Al-Qur’an dalam bahasa Arab yang tidak ada kebengkokan di dalamnya supaya mereka bertakwa.” (QS. Az-Zumar: 27–28)</span>
+              </blockquote>
+              <p class="text-white">Ibnu Taimiyah berkata: <span class="font-arabic block text-xl mt-2">اللِّسَانُ العَرَبِي شِعَارُ الإِسْلاَمِ وَأَهْلِهِ</span> “Bahasa Arab adalah syi’ar Islam dan kaum muslimin.”</p>
+            </div>
+        
+            <!-- Alasan 2–7 -->
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="space-y-4 text-white" data-aos="fade-right">
+                <h3 class="text-xl font-semibold text-green-600">2. Memudahkan memahami Al-Qur’an dan Hadis</h3>
+                <p>Bahasa Arab memudahkan hafalan, pemahaman, dan pengamalan isi Al-Qur’an dan Hadis Nabi ﷺ.</p>
+        
+                <h3 class="text-xl font-semibold text-green-600">3. Kunci dakwah dan pemahaman Islam</h3>
+                <p>Da’i, ustadz, dan penyampai dakwah sangat dianjurkan memahami nahwu agar bisa menjelaskan agama dengan benar.</p>
+        
+                <h3 class="text-xl font-semibold text-green-600">4. Akses langsung ke ilmu ulama</h3>
+                <p>Bahasa Arab membuka akses ke kitab asli ulama tanpa bergantung pada terjemahan yang terbatas.</p>
+              </div>
+        
+              <div class="space-y-4 text-white" data-aos="fade-left">
+                <h3 class="text-xl font-semibold text-green-600">5. Bahasa yang menentramkan jiwa</h3>
+                <p>Ibnu Katsir: <span class="font-arabic block text-xl mt-2">لأن لغة العرب أفصح اللغات وأبينها...</span> “Bahasa Arab paling fasih, jelas, dan luas dalam menyampaikan makna.”</p>
+        
+                <h3 class="text-xl font-semibold text-green-600">6. Bahasa paling mulia</h3>
+                <p>Al-Qur’an diturunkan dalam bahasa Arab, melalui Rasul dan malaikat paling mulia, di tempat dan waktu paling mulia.</p>
+                <blockquote class="bg-purple-50 border-l-4 border-purple-500 p-4 text-gray-700">
+                  إِنَّا أَنزلْنَاهُ قُرْآنًا عَرَبِيًّا لَعَلَّكُمْ تَعْقِلُونَ (QS. Yusuf: 2)
+                </blockquote>
+        
+                <h3 class="text-xl font-semibold text-green-600">7. Bahasa hukum yang lurus dan jelas</h3>
+                <p>Bahasa Arab mudah dipahami dan digunakan sebagai dasar hukum dalam Islam.</p>
+                <blockquote class="bg-yellow-50 border-l-4 border-yellow-500 p-4 text-gray-700">
+                  قُرْآَنًا عَرَبِيًّا غَيْرَ ذِي عِوَجٍ لَعَلَّهُمْ يَتَّقُونَ (QS. Az-Zumar: 28)
+                </blockquote>
+              </div>
+            </div>
+        
+            <!-- Penutup -->
+            <div class="text-center mt-12 space-y-4" data-aos="fade-up">
+              <p class="text-lg font-medium text-gray-300">Masih tak tergerak hati Anda untuk mempelajari bahasa yang paling mulia dan dicintai oleh Allah?</p>
+              <p class="italic text-green-600">Semoga Allah mudahkan untuk mempelajari bahasa Arab. <br>Ihrish ‘ala maa yanfa’uk — semangatlah dalam hal yang bermanfaat untukmu.</p>
+            </div>
+          </div>
+        </section>
+        
+        <section class="bg-gradient-to-br from-green-900 to-purple-900 py-16 px-6 text-gray-200">
+          <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+            
+            <!-- Konten Teks -->
+            <div class="text-center md:text-left space-y-6" data-aos="fade-right">
+              <h2 class="text-3xl md:text-4xl font-bold">🌱 Dukung Dakwah Digital</h2>
+              <p class="text-gray-300 text-lg">
+                Bantu kami terus mengembangkan aplikasi ini agar lebih banyak orang bisa belajar bahasa Arab dengan mudah.
+              </p>
+              <a href="https://link-donasi.com" target="_blank" class="inline-block bg-green-700 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-full transition duration-300">
+                Donasi Sekarang
+              </a>
+            </div>
+        
+            <!-- Poster Donasi -->
+            <div class="flex justify-center">
+              <img src="../assets/perkotaan.jpg" alt="Poster Donasi" class="rounded-lg shadow-lg w-full max-w-md" data-aos="fade-left">
+            </div>
+        
+          </div>
+        </section>
+        
+
+      <footer class="bg-gray-900 text-gray-400 py-10">
+        <div class="mb-20">
+            <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+                <!-- Branding -->
+                <div>
+                  <h2 class="text-xl font-bold text-white mb-2">Exa Edu-Smart</h2>
+                  <p class="text-sm">Web pembelajaran bahasa arab</p>
+                </div>
+            
+                <!-- Social Media -->
+                <div>
+                  <h3 class="text-white font-semibold mb-4">Terhubung</h3>
+                  <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="mailto:belajarhost899@gmail.com" class="hover:text-white transition">
+                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 13.065l-11.99-7.065v13.065h23.98v-13.065l-11.99 7.065zm11.99-9.065h-23.98l11.99 7.065 11.99-7.065z"/>
+                      </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="hover:text-white transition">
+                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0 1.837c-3.17 0-3.548.012-4.796.07-1.042.048-1.61.218-1.985.362-.5.195-.857.43-1.233.806-.376.376-.611.733-.806 1.233-.144.375-.314.943-.362 1.985-.058 1.248-.07 1.626-.07 4.796s.012 3.548.07 4.796c.048 1.042.218 1.61.362 1.985.195.5.43.857.806 1.233.376.376.733.611 1.233.806.375.144.943.314 1.985.362 1.248.058 1.626.07 4.796.07s3.548-.012 4.796-.07c1.042-.048 1.61-.218 1.985-.362.5-.195.857-.43 1.233-.806.376-.376.611-.733.806-1.233.144-.375.314-.943.362-1.985.058-1.248.07-1.626.07-4.796s-.012-3.548-.07-4.796c-.048-1.042-.218-1.61-.362-1.985-.195-.5-.43-.857-.806-1.233-.376-.376-.733-.611-1.233-.806-.375-.144-.943-.314-1.985-.362-1.248-.058-1.626-.07-4.796-.07zm0 4.838a5.002 5.002 0 100 10.004 5.002 5.002 0 000-10.004zm0 8.167a3.165 3.165 0 110-6.33 3.165 3.165 0 010 6.33zm6.406-8.845a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/>
+                      </svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="hover:text-white transition">
+                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.954 4.569c-.885.392-1.83.656-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.949.555-2.005.959-3.127 1.184-.897-.959-2.178-1.555-3.594-1.555-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124-4.087-.205-7.713-2.164-10.141-5.144-.422.722-.666 1.561-.666 2.475 0 1.708.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.229-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.6 3.419-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 14-7.496 14-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Line -->
+      <div class="mt-10 text-center text-sm text-gray-500 border-t border-gray-700 pt-4">
+        &copy; 2025 Exa Team. 
+        <a href="https://share.google/OTMCqaAea3aOcWK6S" class="text-semibold text-white hover:text-green-400">
+          Hak cipta dilindungi.
+        </a>
+      </div>
+    </footer>
+
+      <!-- Modal Donasi -->
+  <div id="donationModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg shadow-xl max-w-md w-full p-6 text-center relative">
+      <button onclick="closeDonation()" class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-xl font-bold">&times;</button>
+      <img src="../assets/logo.jpg" alt="Poster Donasi" class="mx-auto mb-4 rounded-md shadow-md">
+      <h2 class="text-2xl font-semibold text-green-700 mb-2">Dukung Dakwah Digital!</h2>
+      <p class="text-gray-700 mb-4">Bantu kami menyebarkan ilmu dan inspirasi Islami melalui donasi Anda. Setiap kontribusi sangat berarti.</p>
+      <a href="https://link-donasi.com" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-full transition duration-300">
+        Donasi Sekarang
+      </a>
+    </div>
+  </div>
+      
+<script src="./js/mobile-menu.js"></script>
+<script src="./js/donasi.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    disable: function () {
+        var maxWidth = 600;
+        return window.innerWidth < maxWidth;
+    }
+});
+</script>
+</body>
+</html>
