@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donasi | Exa Edu-Smart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+            scroll-behavior: smooth;
+        }
+
+        @keyframes marquee {
+            0%   { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .marquee {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 40s linear infinite;
+        }
+
+        .paused {
+            animation-play-state: paused !important;
+        }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-purple-800 to-black text-gray-200 font-sans">
+
+    <header class="fixed top-0 w-full z-50 bg-black bg-opacity-70 backdrop-blur-sm text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+          <!-- Logo -->
+          <div class="flex space-x-3">
+            <img src="../assets/logo.jpg" alt="Logo" class="h-7 w-7 object-cover rounded-full">
+            <h1 class="text-1xl font-bold tracking-wide">Exa Edu-Smart</h1>
+          </div>
+      
+          <button onclick="history.back()" 
+                  class="flex items-center space-x-2 px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-white">
+            <span class="text-sm font-semibold">Tutup</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      
+        <!-- Marquee Donatur -->
+        <div class="bg-gradient-to-br from-green-800 to-black text-white py-2 overflow-hidden whitespace-nowrap">
+          <div class="inline-block marquee hover:paused px-4">
+            🎉 Terima kasih kepada para donatur: 
+            <span class="mx-4">Ust. Ahmad</span> • 
+            <span class="mx-4">Fatimah Azzahra</span> • 
+            <span class="mx-4">Hamba Allah</span> • 
+            <span class="mx-4">Muhammad Rizki</span> • 
+            <span class="mx-4">Nurul Hidayah</span> • 
+            <span class="mx-4">dan Anda selanjutnya... 🤲</span>
+          </div>
+        </div>
+      </header>
+
+  <!-- Konten Donasi -->
+  <main class="pt-32 pb-16 px-6">
+    <section class="max-w-4xl mx-auto text-center space-y-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-green-400">🤲 Dukung Dakwah Digital</h2>
+      <p class="text-gray-300">
+        Setiap kontribusi Anda sangat berarti untuk mendukung pengembangan aplikasi <strong>Exa Edu-Smart</strong>.
+        Silakan pilih salah satu metode donasi berikut:
+      </p>
+    </section>
+
+    <!-- Grid Rekening -->
+    <section class="max-w-5xl mx-auto mt-10 grid gap-6 md:grid-cols-3">
+      <!-- BSI -->
+      <div class="bg-gray-900 rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition">
+        <img src="../assets/bsi.png" alt="BSI" class="mx-auto h-12 mb-4">
+        <h3 class="text-xl font-semibold text-green-400">Bank Syariah Indonesia</h3>
+        <p class="mt-2 text-lg font-bold text-white">1234567890</p>
+        <p class="text-sm text-gray-400">a.n Exa Edu-Smart</p>
+      </div>
+
+      <!-- ShopeePay -->
+      <div class="bg-gray-900 rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition">
+        <img src="../assets/shopeepay.png" alt="ShopeePay" class="mx-auto h-12 mb-4">
+        <h3 class="text-xl font-semibold text-orange-400">ShopeePay</h3>
+        <p class="mt-2 text-lg font-bold text-white">0812-3456-7890</p>
+        <p class="text-sm text-gray-400">a.n Exa Edu-Smart</p>
+      </div>
+
+      <!-- DANA -->
+      <div class="bg-gray-900 rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition">
+        <img src="../assets/dana.png" alt="DANA" class="mx-auto h-12 mb-4">
+        <h3 class="text-xl font-semibold text-blue-400">DANA</h3>
+        <p class="mt-2 text-lg font-bold text-white">0812-3456-7890</p>
+        <p class="text-sm text-gray-400">a.n Exa Edu-Smart</p>
+      </div>
+    </section>
+
+    <!-- Catatan -->
+<section class="max-w-4xl mx-auto mt-20 text-center text-sm text-gray-400 space-y-2">
+    <p>
+      Semoga Allah membalas kebaikan Anda dengan pahala yang berlipat ganda. 
+      Jazakumullahu khairan. 🌸
+    </p>
+    <p>
+      Setelah melakukan transfer, mohon konfirmasi donasi Anda ke kontak yang tersedia 
+      agar kami dapat mencatat dan mendoakan secara khusus. 📩
+    </p>
+    <p class="text-green-400 font-semibold pt-5">
+      Kontak Konfirmasi: <br>
+      WhatsApp: 0822‑1053‑6926 <br>
+      Email: belajarhost899@gmail.com
+    </p>
+  </section>
+  
+  </main>
+
+  <footer class="bg-gray-900 text-gray-400 py-10">
+    <div class="mb-20">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+            <!-- Branding -->
+            <div>
+              <h2 class="text-xl font-bold text-white mb-2">Exa Edu-Smart</h2>
+              <p class="text-sm">Web pembelajaran bahasa arab</p>
+            </div>
+        
+            <!-- Social Media -->
+            <div>
+              <h3 class="text-white font-semibold mb-4">Terhubung</h3>
+              <div class="flex justify-center md:justify-start space-x-4">
+                <a href="mailto:belajarhost899@gmail.com" class="hover:text-white transition">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 13.065l-11.99-7.065v13.065h23.98v-13.065l-11.99 7.065zm11.99-9.065h-23.98l11.99 7.065 11.99-7.065z"/>
+                  </svg>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="hover:text-white transition">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0 1.837c-3.17 0-3.548.012-4.796.07-1.042.048-1.61.218-1.985.362-.5.195-.857.43-1.233.806-.376.376-.611.733-.806 1.233-.144.375-.314.943-.362 1.985-.058 1.248-.07 1.626-.07 4.796s.012 3.548.07 4.796c.048 1.042.218 1.61.362 1.985.195.5.43.857.806 1.233.376.376.733.611 1.233.806.375.144.943.314 1.985.362 1.248.058 1.626.07 4.796.07s3.548-.012 4.796-.07c1.042-.048 1.61-.218 1.985-.362.5-.195.857-.43 1.233-.806.376-.376.611-.733.806-1.233.144-.375.314-.943.362-1.985.058-1.248.07-1.626.07-4.796s-.012-3.548-.07-4.796c-.048-1.042-.218-1.61-.362-1.985-.195-.5-.43-.857-.806-1.233-.376-.376-.733-.611-1.233-.806-.375-.144-.943-.314-1.985-.362-1.248-.058-1.626-.07-4.796-.07zm0 4.838a5.002 5.002 0 100 10.004 5.002 5.002 0 000-10.004zm0 8.167a3.165 3.165 0 110-6.33 3.165 3.165 0 010 6.33zm6.406-8.845a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/>
+                  </svg>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="hover:text-white transition">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.954 4.569c-.885.392-1.83.656-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.949.555-2.005.959-3.127 1.184-.897-.959-2.178-1.555-3.594-1.555-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124-4.087-.205-7.713-2.164-10.141-5.144-.422.722-.666 1.561-.666 2.475 0 1.708.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.229-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.6 3.419-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 14-7.496 14-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Line -->
+  <div class="mt-10 text-center text-sm text-gray-500 border-t border-gray-700 pt-4">
+    &copy; 2025 Exa Team. 
+    <a href="https://share.google/OTMCqaAea3aOcWK6S" class="text-semibold text-white hover:text-green-400">
+      Hak cipta dilindungi.
+    </a>
+  </div>
+</footer>
+  <script src="./js/loading.js"></script>
+  <script src="./js/text-run.js"></script>
+  <script src="./js/donasi.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    disable: function () {
+        var maxWidth = 600;
+        return window.innerWidth < maxWidth;
+    }
+});
+  </script>
+</body>
+</html>
