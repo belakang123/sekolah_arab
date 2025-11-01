@@ -38,7 +38,7 @@
     <loc>https://belakang123.github.io/ExaEduSmart/public/Donasi.html</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 
   <!-- Halaman Motivasi -->
@@ -46,7 +46,7 @@
     <loc>https://belakang123.github.io/ExaEduSmart/public/kumpulan_motivasi.html</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 
 </urlset>
