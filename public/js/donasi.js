@@ -31,7 +31,6 @@ function createDonationModal() {
 
   const donateBtn = document.createElement('a');
   donateBtn.href = '../public/Donasi.html';
-  donateBtn.target = '_blank';
   donateBtn.textContent = 'Donasi Sekarang';
   donateBtn.className = 'inline-block bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white font-semibold px-8 py-3 rounded-full shadow-lg transform hover:scale-105 transition duration-300 donasi-btn';
 
