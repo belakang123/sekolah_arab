@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Firebase SDK Compat -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+</head>
+<body class="bg-gray-950 text-white font-sans min-h-screen flex flex-col items-center justify-center px-4">
+
+  <div class="max-w-8xl w-full bg-gray-900 rounded-xl shadow-lg p-8">
+    <h1 class="text-3xl font-bold text-purple-400 mb-6 text-center animate-bounce">📊 Admin Panel</h1>
+
+    <!-- Total Pengunjung -->
+    <div class="bg-gray-800 rounded-lg p-6 flex items-center justify-between hover:bg-purple-700 transition">
+      <div>
+        <h2 class="text-xl font-semibold">Total Pengunjung</h2>
+        <p class="text-sm text-gray-400">Jumlah orang yang telah membuka website</p>
+      </div>
+      <div class="text-5xl font-bold text-purple-300" id="visitorCount">0</div>
+    </div>
+
+    <div class="mt-4 text-center text-sm text-gray-500">
+      Terakhir diperbarui: <span id="lastUpdated">-</span>
+    </div>
+
+    <!-- Grafik Statistik -->
+    <h2 class="text-xl font-semibold text-white mt-10 mb-4">Statistik Harian</h2>
+    <canvas id="visitorChart" class="bg-black rounded-lg p-4"></canvas>
+  </div>
+
+  <script>
+    // Konfigurasi Firebase
+    const firebaseConfig = {
+      apiKey: "AIzaSyACcj76KmLSaY7G4SNkZGmrOF779XB8iHI",
+      authDomain: "room-chat-97ef1.firebaseapp.com",
+      databaseURL: "https://room-chat-97ef1-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "room-chat-97ef1",
+      storageBucket: "room-chat-97ef1.firebasestorage.app",
+      messagingSenderId: "350995805587",
+      appId: "1:350995805587:web:ac43bc3a0e9445afa22466",
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+    const visitorRef = db.ref("visitorCount");
+    const logRef = db.ref("visitorLog");
+
+    // Tampilkan total pengunjung
+    visitorRef.on("value", function(snapshot) {
+      document.getElementById("visitorCount").textContent = snapshot.val();
+      const now = new Date().toLocaleString("id-ID", { timeZone: "Asia/Jakarta" });
+      document.getElementById("lastUpdated").textContent = now;
+    });
+
+    // Inisialisasi Chart.js
+    const ctx = document.getElementById('visitorChart').getContext('2d');
+    const chart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: [],
+        datasets: [{
+          label: 'Jumlah Kunjungan',
+          data: [],
+          backgroundColor: 'rgba(168, 85, 247, 0.7)'
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Statistik Pengunjung Harian'
+          }
+        },
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Tanggal'
+            }
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'Jumlah Kunjungan'
+            },
+            beginAtZero: true
+          }
+        }
+      }
+    });
+
+    // Update data grafik dari Firebase
+    logRef.on("value", function(snapshot) {
+      const data = snapshot.val();
+      const dailyCount = {};
+
+      for (let key in data) {
+        const date = new Date(data[key].timestamp).toLocaleDateString("id-ID");
+        dailyCount[date] = (dailyCount[date] || 0) + 1;
+      }
+
+      const labels = Object.keys(dailyCount);
+      const values = Object.values(dailyCount);
+
+      chart.data.labels = labels;
+      chart.data.datasets[0].data = values;
+      chart.update();
+    });
+  </script>
+</body>
+</html>
