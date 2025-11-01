@@ -52,7 +52,7 @@
               <a href="./public/masuk.html" class="hover:text-purple-400">Masuk</a>
               <a href="./public/tentang.html" class="hover:text-purple-400">Tentang</a>
               <a href="./public/kontak.html" class="hover:text-purple-400">Kontak</a>
-              <a href="#" class="hover:text-purple-400">Kamus</a>
+              <a href="https://www.almaany.com" class="hover:text-purple-400">Kamus</a>
               <a href="./public/room-chat.html" class="hover:text-purple-400">Chat</a>
             </nav>
         </div>
@@ -62,7 +62,7 @@
             <a href="./public/masuk.html" class="block text-white hover:text-purple-400">Masuk</a>
             <a href="./public/tentang.html" class="block text-white hover:text-purple-400">Tentang</a>
             <a href="./public/kontak.html" class="block text-white hover:text-purple-400">Kontak</a>
-            <a href="#" class="block text-white hover:text-purple-400">Kamus</a>
+            <a href="https://www.almaany.com" class="block text-white hover:text-purple-400">Kamus</a>
             <a href="./public/room-chat.html" class="block text-white hover:text-purple-400">Chat</a>
         </div>
 
@@ -186,14 +186,14 @@
         <p class="text-gray-300 text-lg">
           Bantu kami terus mengembangkan aplikasi ini agar lebih banyak orang bisa belajar bahasa Arab dengan mudah.
         </p>
-        <a href="https://link-donasi.com" target="_blank" class="inline-block bg-green-700 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-full transition duration-300">
+        <a href="./public/Donasi.html" target="_blank" class="inline-block bg-green-700 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-full transition duration-300">
           Donasi Sekarang
         </a>
       </div>
   
       <!-- Poster Donasi -->
       <div class="flex justify-center">
-        <img src="./assets/perkotaan.jpg" alt="Poster Donasi" class="rounded-lg shadow-lg w-full max-w-md" data-aos="fade-left">
+        <img src="./assets/Donasi.png" alt="Poster Donasi" class="rounded-lg shadow-lg w-full max-w-md" data-aos="fade-left">
       </div>
   
     </div>
@@ -271,6 +271,37 @@
         return window.innerWidth < maxWidth;
     }
 });
+  </script>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyACcj76KmLSaY7G4SNkZGmrOF779XB8iHI",
+      authDomain: "room-chat-97ef1.firebaseapp.com",
+      databaseURL: "https://room-chat-97ef1-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "room-chat-97ef1",
+      storageBucket: "room-chat-97ef1.firebasestorage.app",
+      messagingSenderId: "350995805587",
+      appId: "1:350995805587:web:ac43bc3a0e9445afa22466",
+      measurementId: "G-ZXSL1S14ZQ"
+    };
+  
+    firebase.initializeApp(firebaseConfig);
+      const db = firebase.database();
+      const visitorRef = db.ref("visitorCount");
+  
+      // Tambah 1 pengunjung
+      visitorRef.transaction(function(currentValue) {
+        return (currentValue || 0) + 1;
+      });
+  
+      const logRef = db.ref("visitorLog");
+        logRef.push({
+        timestamp: new Date().toISOString()
+      });
+  
   </script>
 </body>
 </html>
