@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://belakang123.github.io/ExaEduSmart/sitemap.xml
