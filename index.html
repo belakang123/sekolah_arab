@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="HgXJudv2sm_b4voqbouDNP4vRjfyT7DL2okTUZZNu0o" />
-    <meta name="description" content="Exa Edu-Smart adalah aplikasi web pembelajaran bahasa Arab berbasis Islami. Menyediakan fitur interaktif seperti chat, motivasi harian, kuis, dan materi tahfiz untuk mendukung dakwah digital dan pendidikan Islami modern.">
+    <meta name="description" content="Aplikasi web pembelajaran bahasa Arab berbasis Islami. Menyediakan fitur interaktif seperti chat, motivasi harian, kuis, dan materi tahfiz untuk mendukung dakwah digital dan pendidikan Islami modern.">
     <meta name="keywords" content="belajar bahasa arab dengan mudah, bahasa arab">
     <title>Pembelajaran Bahasa Arab Modern dan Nahwu | Exa Edu-Smart</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -83,33 +83,31 @@
 </div>
     </header>
 
-    <main class="bg-gradient-to-br from-green-800 to-black min-h-screen flex items-center px-6 py-12 pt-28">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <main id="heroSection" class="relative min-h-screen flex items-center px-6 py-12 pt-28 text-white overflow-hidden">
+
+  <!-- Overlay gelap agar teks tetap terbaca -->
+  <div class="absolute inset-0 bg-black/60 z-0"></div>
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center relative z-10">
     
-        <!-- Bagian Teks (kiri) -->
-        <div class="text-left text-white space-y-6" data-aos="fade-right">
-          <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-lg">
-            🌟 Inspirasi
-          </h1>
-          <h2 id="typewriter" class="text-xl md:text-2xl text-purple-300 font-medium"></h2>
-          <p class="text-base md:text-lg leading-relaxed text-gray-200">
-            Meraih kemudahan dan kesenangan belajar bahasa Arab dengan metode modern, interaktif, dan penuh motivasi.
-            Mulai perjalananmu hari ini untuk menguasai bahasa yang penuh sejarah dan makna.
-          </p>
-          <a href="./public/kumpulan_motivasi.html"
-             class="inline-block mt-4 px-6 py-3 bg-purple-600 hover:bg-purple-800 text-white font-semibold rounded-full shadow-md transition duration-300">
-            Kumpulan Motivasi
-          </a>
-        </div>
-    
-        <!-- Bagian Gambar (kanan) -->
-        <div class="flex justify-center">
-          <img src="./assets/perkotaan.jpg" alt="Ilustrasi Inspirasi"
-               class="rounded-lg shadow-lg w-full max-w-md"  data-aos="fade-left">
-        </div>
-    
-      </div>
-    </main>
+    <!-- Bagian Teks (kiri) -->
+    <div class="text-left space-y-6" data-aos="fade-right">
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-lg">
+        🌟 Inspirasi
+      </h1>
+      <h2 id="typewriter" class="text-xl md:text-2xl text-purple-300 font-medium"></h2>
+      <p class="text-base md:text-lg leading-relaxed text-gray-200">
+        Meraih kemudahan dan kesenangan belajar bahasa Arab dengan metode modern, interaktif, dan penuh motivasi.
+        Mulai perjalananmu hari ini untuk menguasai bahasa yang penuh sejarah dan makna.
+      </p>
+      <a href="./public/kumpulan_motivasi.html"
+         class="inline-block mt-4 px-6 py-3 bg-purple-600 hover:bg-purple-800 text-white font-semibold rounded-full shadow-md transition duration-300">
+        Kumpulan Motivasi
+      </a>
+    </div>
+
+  </div>
+</main>
     
 
       <section class="py-16 px-6 text-white">
@@ -132,10 +130,13 @@
           <div data-aos="fade-left">
             <h2 class="text-3xl md:text-4xl font-bold">🧠 Latihan Kosakata Harian</h2>
             <p class="text-lg">Tingkatkan hafalanmu dengan satu kata baru setiap hari!</p>
-            <div class="bg-gray-400 hover:bg-white text-black rounded-lg shadow-md p-6">
-              <h3 class="text-xl font-semibold mb-2">كِتَابٌ (kitābun)</h3>
-              <p class="mb-4">Artinya: Buku</p>
-              <button class="bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-full transition duration-300">
+      
+            <!-- Card Kosakata -->
+            <div id="vocabCard" class="bg-gray-400 hover:bg-white text-black rounded-lg shadow-md p-6 transition duration-300">
+              <h3 id="vocabWord" class="text-xl font-semibold mb-2">كِتَابٌ (kitābun)</h3>
+              <p id="vocabMeaning" class="mb-4">Artinya: Buku</p>
+              <button id="nextBtn" 
+                class="bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-full transition duration-300">
                 Saya Hafal!
               </button>
             </div>
@@ -306,5 +307,69 @@
       });
   
   </script>
+  <main id="heroSection" class="min-h-screen">
+    <!-- kontenmu di sini -->
+  </main>
+  
+  <script>
+    // Daftar kosakata
+    const vocabList = [
+      { arab: "كِتَابٌ (kitābun)", arti: "Buku" },
+      { arab: "قَلَمٌ (qalamun)", arti: "Pulpen" },
+      { arab: "مَاءٌ (mā’un)", arti: "Air" },
+      { arab: "مَدْرَسَةٌ (madrasatun)", arti: "Sekolah" },
+      { arab: "مُعَلِّمٌ (mu‘allimun)", arti: "Guru" },
+      { arab: "طَالِبٌ (ṭālibun)", arti: "Murid" },
+      { arab: "بَيْتٌ (baytun)", arti: "Rumah" },
+      { arab: "سَيَّارَةٌ (sayyāratun)", arti: "Mobil" }
+    ];
+  
+    let vocabIndex = 0;
+  
+    const vocabWord = document.getElementById("vocabWord");
+    const vocabMeaning = document.getElementById("vocabMeaning");
+    const nextBtn = document.getElementById("nextBtn");
+  
+    function showVocab(index) {
+      vocabWord.textContent = vocabList[index].arab;
+      vocabMeaning.textContent = "Artinya: " + vocabList[index].arti;
+    }
+  
+    nextBtn.addEventListener("click", () => {
+      vocabIndex = (vocabIndex + 1) % vocabList.length; // looping
+      showVocab(vocabIndex);
+    });
+  
+    // Tampilkan kosakata pertama saat load
+    showVocab(vocabIndex);
+  </script>
+  
+  <script>
+    // Array gambar background
+    const bgImages = [
+      "./assets/bg-arab4.jpg",
+      "./assets/bg-arab1.jpg",
+      "./assets/bg-arab3.jpg",
+      "./assets/bg-arab2.jpg"
+    ];
+  
+    let bgIndex = 0;
+    const heroSection = document.getElementById("heroSection");
+  
+    function changeBackground() {
+      if (!heroSection) return; // antisipasi error kalau elemen tidak ada
+      heroSection.style.backgroundImage = `url('${bgImages[bgIndex]}')`;
+      heroSection.style.backgroundSize = "cover";
+      heroSection.style.backgroundPosition = "center";
+      heroSection.style.transition = "background-image 1s ease-in-out";
+  
+      bgIndex = (bgIndex + 1) % bgImages.length;
+    }
+  
+    // Ganti background setiap 6 detik
+    changeBackground();
+    setInterval(changeBackground, 6000);
+  </script>
+  
 </body>
 </html>
