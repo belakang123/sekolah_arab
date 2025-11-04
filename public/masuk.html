@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/logo.jpg"" type="image/x-icon">
     <title>Beranda | Exa Edu-Smart</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -81,33 +82,31 @@
     </header>
 
 
-    <main class="min-h-screen bg-gradient-to-br from-purple-800 to-black text-white px-6 py-16 pt-28">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-        
-        <section class="space-y-6 text-left" data-aos="fade-left">
-          <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight drop-shadow-lg">
-            🌟 Selamat Datang di Kelas Bahasa Arab
-          </h1>
-          <h3 class="text-xl md:text-2xl text-purple-300 font-medium">
-            Belajar Bahasa Arab dari Nol sampai Mahir
-          </h3>
-          <div class="text-base md:text-lg text-gray-200 space-y-3">
-            <p>Apakah Anda sudah siap untuk mempelajari bahasa Arab?</p>
-            <p>Apakah Anda sudah mempunyai bekal dalam mempelajari bahasa Arab?</p>
-            <p>Jika belum, mari kita mulai sesuai dengan kemampuan Anda.</p>
-          </div>
-          <a href="#mulai" class="inline-block mt-4 px-6 py-3 bg-purple-600 hover:bg-purple-800 text-white font-semibold rounded-full shadow-md transition duration-300">
-            Mulai Belajar
-          </a>
-        </section>
+    <main id="heroSection" 
+      class="relative min-h-screen flex items-center px-6 py-12 pt-28 text-white overflow-hidden">
+
+  <!-- Overlay gelap agar teks tetap terbaca -->
+  <div class="absolute inset-0 bg-black/60 z-0"></div>
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center relative z-10">
     
-        <!-- Gambar di Kanan -->
-        <div class="flex justify-center">
-          <img src="../assets/perkotaan.jpg" alt="Ilustrasi Belajar Bahasa Arab" class="rounded-lg shadow-lg w-full max-w-md"  data-aos="fade-right">
-        </div>
-    
+    <!-- Bagian Teks (kiri) -->
+    <div class="text-left space-y-6" data-aos="fade-right">
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-lg">
+         Selamat Datang di Kelas Bahasa Arab
+      </h1>
+      <div class="text-base md:text-lg text-gray-200 space-y-3">
+        <p>Apakah Anda sudah siap untuk mempelajari bahasa Arab?</p>
+        <p>Apakah Anda sudah mempunyai bekal dalam mempelajari bahasa Arab?</p>
+        <p>Jika belum, mari kita mulai sesuai dengan kemampuan Anda.</p>
       </div>
-    </main>
+      <a href="#mulai" class="inline-block mt-4 px-6 py-3 bg-purple-600 hover:bg-purple-800 text-white font-semibold rounded-full shadow-md transition duration-300">
+        Mulai Belajar
+      </a>
+    </div>
+
+  </div>
+</main>
     
 
         <section class="bg-gray-100 py-16 px-6">
@@ -204,23 +203,23 @@
           </div>
         </section>
         
-        <section class="bg-gradient-to-br from-green-900 to-purple-900 py-16 px-6 text-gray-200">
+        <section class="bg-gray-100 py-16 px-6 text-green-800">
           <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
             
             <!-- Konten Teks -->
             <div class="text-center md:text-left space-y-6" data-aos="fade-right">
               <h2 class="text-3xl md:text-4xl font-bold">🌱 Dukung Dakwah Digital</h2>
-              <p class="text-gray-300 text-lg">
+              <p class="text-green-800 text-lg">
                 Bantu kami terus mengembangkan aplikasi ini agar lebih banyak orang bisa belajar bahasa Arab dengan mudah.
               </p>
-              <a href="../public/Donasi.html" target="_blank" class="inline-block bg-green-700 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-full transition duration-300">
+              <a href="../public/Donasi.html" class="inline-block bg-green-700 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-full transition duration-300">
                 Donasi Sekarang
               </a>
             </div>
         
             <!-- Poster Donasi -->
             <div class="flex justify-center">
-              <img src="../assets/Donasi.png" alt="Poster Donasi" class="rounded-lg shadow-lg w-full max-w-md" data-aos="fade-left">
+              <img src="../assets/Donasi.png" alt="Poster Donasi" class="rounded-lg drop-shadow-lg w-full max-w-md" data-aos="fade-left">
             </div>
         
           </div>
@@ -282,6 +281,32 @@
         return window.innerWidth < maxWidth;
     }
 });
+</script>
+<script>
+  // Array gambar background
+  const bgImages = [
+    "../assets/bg-arab4.jpg",
+    "../assets/bg-arab1.jpg",
+    "../assets/bg-arab3.jpg",
+    "../assets/bg-arab2.jpg"
+  ];
+
+  let bgIndex = 0;
+  const heroSection = document.getElementById("heroSection");
+
+  function changeBackground() {
+    if (!heroSection) return; // antisipasi error kalau elemen tidak ada
+    heroSection.style.backgroundImage = `url('${bgImages[bgIndex]}')`;
+    heroSection.style.backgroundSize = "cover";
+    heroSection.style.backgroundPosition = "center";
+    heroSection.style.transition = "background-image 1s ease-in-out";
+
+    bgIndex = (bgIndex + 1) % bgImages.length;
+  }
+
+  // Ganti background setiap 6 detik
+  changeBackground();
+  setInterval(changeBackground, 6000);
 </script>
 </body>
 </html>

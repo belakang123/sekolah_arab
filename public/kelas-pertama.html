@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/logo.jpg"" type="image/x-icon">
+  <title>Kelas Pertama | Exa Edu-Smart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+            scroll-behavior: smooth;
+        }
+
+        @keyframes marquee {
+            0%   { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .marquee {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 40s linear infinite;
+        }
+
+        .paused {
+            animation-play-state: paused !important;
+        }
+
+    body 
+    .content-card {
+      @apply bg-white bg-opacity-10 backdrop-blur-md rounded-xl shadow-lg p-8 transition transform hover:scale-[1.02] hover:shadow-2xl;
+    }
+    .hijaiyah-list span {
+      @apply inline-block bg-purple-700 text-white text-xl md:text-2xl rounded-lg px-3 py-2 m-1 shadow-md transition transform hover:scale-110;
+    }
+    .arabic-examples li {
+      @apply bg-gray-800 text-white rounded-lg p-4 mb-3 shadow-md hover:bg-purple-700 transition;
+    }
+    .arabic-examples .trans {
+      @apply block text-sm text-gray-300 mt-1;
+    }
+    .video-list li a {
+      @apply block bg-gradient-to-r from-green-600 to-purple-600 text-white rounded-lg px-4 py-2 mb-2 shadow-md hover:from-purple-600 hover:to-green-600 transition;
+    }
+    .back-btn {
+      @apply inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-purple-900 to-black font-sans">
+
+  <!--Navbar-->
+  <header class="fixed top-0 w-full z-50 bg-black bg-opacity-70 backdrop-blur-sm text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex space-x-3">
+            <img src="../assets/logo.jpg" alt="" class="h-7 w-7 object-cover rounded-full">
+            <h1 class="text-1xl font-bold tracking-wide">Exa Edu-Smart</h1>
+        </div>
+    
+        <!-- Hamburger Icon -->
+        <button id="menuToggle" class="md:hidden text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+    
+        <!-- Desktop Menu -->
+        <nav class="space-x-6 hidden md:flex">
+          <a href="../public/masuk.html" class="hover:text-purple-400">Beranda</a>
+          <a href="../public/bantuan.html" class="hover:text-purple-400">Bantuan</a>
+          <a href="https://www.almaany.com" class="hover:text-purple-400">Kamus</a>
+          <a href="../public/room-chat.html" class="hover:text-purple-400">Chat</a>
+        </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden flex-col bg-black bg-opacity-90 px-4 py-6 space-y-4 text-center">
+        <a href="../public/masuk.html" class="block text-white hover:text-purple-400">Beranda</a>
+        <a href="../public/bantuan.html" class="block text-white hover:text-purple-400">Bantuan</a>
+        <a href="https://www.almaany.com" class="block text-white hover:text-purple-400">Kamus</a>
+        <a href="../public/room-chat.html" class="block text-white hover:text-purple-400">Chat</a>
+    </div>
+
+    <!-- Marquee Donatur -->
+  <div class="bg-gradient-to-br from-green-800 to-black  text-white py-2 overflow-hidden whitespace-nowrap">
+    <div class="inline-block marquee hover:paused px-4">
+      🎉 Terima kasih kepada para donatur: 
+      <span class="mx-4">Ust. Ahmad</span> • 
+      <span class="mx-4">Fatimah Azzahra</span> • 
+      <span class="mx-4">Hamba Allah</span> • 
+      <span class="mx-4">Muhammad Rizki</span> • 
+      <span class="mx-4">Nurul Hidayah</span> • 
+      <span class="mx-4">dan Anda selanjutnya... 🤲</span>
+    </div>
+  </div>
+</header>
+
+<main class="mx-auto min-h-screen px-6 py-20 pt-32 space-y-16">
+  <!-- Hero Section -->
+  <section class="text-center space-y-4">
+    <div data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-green-400 drop-shadow-lg">
+        Kelas Pertama
+      </h1>
+      <h2 class="subtitle text-xl md:text-2xl text-gray-300">
+        Belajar Bahasa Arab untuk Pemula
+      </h2>
+    </div>
+  </section>
+
+  <!-- Mengapa Belajar -->
+  <section class="scroll-effect">
+    <div class="grid md:grid-cols-2 gap-10 items-center content-card mb-15 bg-white/5 backdrop-blur-md rounded-xl shadow-lg p-8" data-aos="fade-right">
+      
+      <!-- Teks -->
+      <div class="text-gray-300 space-y-4">
+        <h2 class="text-3xl font-bold text-green-400 mb-4">Mengapa Belajar Bahasa Arab?</h2>
+        <p>Bahasa Arab sebagai bahasa agama, bahasa integrasi dunia Arab, dan bahasa resmi PBB termasuk bahasa yang sangat layak dipelajari.</p>
+        <p>Manfaat belajar bahasa Arab tidak hanya untuk pengembangan kajian keislaman tetapi juga dalam pengembangan ilmu pengetahuan dan peradaban.</p>
+        <p>Bahasa Arab dan peradaban Islam sepanjang sejarahnya tidak dapat dipisahkan, mereka bagaikan dua sisi dari mata uang.</p>
+        <p>Di satu sisi bahasa Arab dapat maju karena Al-Qur’an, dan di sisi lain, bahasa Arab perlu dikembangkan sebagai ilmu karena dibutuhkan untuk melayani kajian Al-Qur’an.</p>
+        <p>Demikian pendapat para ahli bahasa yang mengatakan bahwa ilmu bahasa Arab dan keislaman dapat berkembang, karena inspirasi dan motivasi dari Al-Qur’an yang berbahasa Arab.</p>
+        <p class="font-semibold text-green-500">Dari penjelasan ini, kamu yang belajar bahasa Arab untuk pemula akan sangat termotivasi bukan?</p>
+      </div>
+
+      <!-- Gambar -->
+      <div class="flex justify-center">
+        <img src="../assets/perkotaan.jpg" alt="Belajar Bahasa Arab" class="rounded-lg shadow-2xl w-full max-w-md hover:scale-105 transition-transform duration-500" data-aos="fade-left">
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+<main class="bg-gray-200 text-purple-900 min-h-screen px-6 py-20 pt-32">
+  <!-- Langkah Belajar -->
+  <section class="scroll-effect">
+    <div class="content-card bg-green/10 backdrop-blur-md rounded-2xl shadow-2xl p-10 transition transform hover:scale-[1.01]" data-aos="fade-up">
+      
+      <!-- Judul -->
+      <h2 class="text-3xl font-extrabold text-green-900 mb-6 text-center drop-shadow-lg">
+        🌟 Langkah Belajar Bahasa Arab untuk Pemula
+      </h2>
+
+      <!-- Langkah-langkah -->
+      <ol class="arabic-steps list-decimal list-inside space-y-4 text-lg text-purple-900 leading-relaxed">
+        <li><strong class="text-green-800">Pelajari huruf hijaiyah / huruf arab</strong><br>Mulai dari Alif (ا) sampai Ya (ي).</li>
+        <li><strong class="text-green-800">Pelajari kosakata sehari-hari</strong><br>Pahami kata dasar yang digunakan dalam percakapan.</li>
+        <li><strong class="text-green-800">Pahami struktur dasar kalimat</strong><br>Kenali isim, fi'il, dan harf jar.</li>
+        <li><strong class="text-green-800">Berlatih komunikasi aktif</strong><br>Gunakan pengetahuan untuk berbicara dan mendengarkan.</li>
+        <li><strong class="text-green-800">Kembangkan kemampuan advance</strong><br>Latih dengan buku, soal online, atau kursus.</li>
+      </ol>
+
+      <!-- Huruf Hijaiyah -->
+      <h3 class="mt-10 text-2xl font-semibold text-purple-900 border-b border-purple-500 pb-2">✍️ Contoh Huruf Hijaiyah</h3>
+      <div class="bg-green-500 hijaiyah-list mt-6 flex flex-wrap gap-3 justify-center">
+        <span class="bg-purple-700 text-white text-xl md:text-2xl rounded-lg px-4 py-2 shadow-md hover:scale-110 transition">ا</span>
+        <span class="bg-purple-700 text-white text-xl md:text-2xl rounded-lg px-4 py-2 shadow-md hover:scale-110 transition">ب</span>
+        <span class="bg-purple-700 text-white text-xl md:text-2xl rounded-lg px-4 py-2 shadow-md hover:scale-110 transition">ت</span>
+        <span class="bg-purple-700 text-white text-xl md:text-2xl rounded-lg px-4 py-2 shadow-md hover:scale-110 transition">ث</span>
+        <!-- ... lanjutkan semua huruf dengan pola yang sama ... -->
+        <span class="bg-purple-700 text-white text-xl md:text-2xl rounded-lg px-4 py-2 shadow-md hover:scale-110 transition">ي</span>
+      </div>
+
+      <!-- Contoh Kalimat -->
+      <h3 class="mt-10 text-2xl font-semibold text-purple-900 border-b border-purple-500 pb-2">📖 Contoh Kalimat Arab</h3>
+      <ul class="arabic-examples mt-6 grid md:grid-cols-2 gap-6">
+        <li class="bg-gray-800 rounded-xl p-5 shadow-lg hover:bg-purple-700 transition">
+          <p class="text-2xl text-white">رَكِبَ إِبْرَاهِيْمُ الحِصَانَ</p>
+          <span class="trans block text-sm text-gray-300 mt-2">Ibrahim menaiki kuda</span>
+        </li>
+        <li class="bg-gray-800 rounded-xl p-5 shadow-lg hover:bg-purple-700 transition">
+          <p class="text-2xl text-white">تَأْكُلُ الشَّاةُ فُوْلًا وَشَعِيْرًا</p>
+          <span class="trans block text-sm text-gray-300 mt-2">Domba memakan kacang dan jelai</span>
+        </li>
+        <li class="bg-gray-800 rounded-xl p-5 shadow-lg hover:bg-purple-700 transition">
+          <p class="text-2xl text-white">الطَّائِرُ فَوْقَ الشَّجَرَةِ</p>
+          <span class="trans block text-sm text-gray-300 mt-2">Burung ada di atas pohon</span>
+        </li>
+        <li class="bg-gray-800 rounded-xl p-5 shadow-lg hover:bg-purple-700 transition">
+          <p class="text-2xl text-white">أأَنَا مُدِيْرُ الشَّرِكَةِ فِي إِنْدُونِيْسِيَا</p>
+          <span class="trans block text-sm text-gray-300 mt-2">Aku manajer perusahaan di Indonesia</span>
+        </li>
+        <li class="bg-gray-800 rounded-xl p-5 shadow-lg hover:bg-purple-700 transition md:col-span-2">
+          <p class="text-2xl text-white">يَقْرَأُ الطَّالِبُ الكُتُبَ الإِسْلَامِيَّةَ فِي المَكْتَبَةِ</p>
+          <span class="trans block text-sm text-gray-300 mt-2">Siswa membaca buku-buku Islam di perpustakaan</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<main class="bg-gradient-to-br from-purple-900 via-gray-900 to-black text-gray-100 min-h-screen px-6 py-20 pt-32">
+  <section class="max-w-4xl mx-auto space-y-6">
+    <h3 class="text-2xl md:text-3xl font-bold text-green-400 text-center drop-shadow-lg">
+      🎥 Tutorial Video Bahasa Arab oleh Ustadz Firanda
+    </h3>
+
+    <!-- Tombol toggle semua -->
+    <div class="text-center">
+      <button id="toggleAllBtn" 
+              class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full shadow-lg transition">
+        Sembunyikan Semua Video
+      </button>
+    </div>
+
+    <!-- Video List -->
+    <div class="space-y-4 mt-6">
+      <!-- Video 1 -->
+<div class="bg-white/10 backdrop-blur-md rounded-xl shadow-lg overflow-hidden">
+  <button class="w-full text-left px-4 py-3 font-semibold text-purple-300 flex justify-between items-center toggle-btn">
+    Tutorial Pertama <span class="text-sm text-gray-400">Klik untuk buka/tutup</span>
+  </button>
+  <div class="video-content p-4 space-y-4">
+    <!-- Penjelasan Nahwu -->
+    <div class="bg-gray-900/40 rounded-lg p-4 text-gray-200">
+      <h4 class="text-lg font-semibold text-green-400 mb-2">📖 Penjelasan Singkat</h4>
+      <p class="leading-relaxed">
+        Pada tutorial pertama ini dibahas dasar-dasar <strong>nahwu</strong>, 
+        khususnya pengenalan <em>isim</em> (kata benda) dan <em>fi‘il</em> (kata kerja). 
+        Dengan memahami keduanya, kita bisa mulai mengenali struktur kalimat sederhana 
+        dalam bahasa Arab.
+      </p>
+    </div>
+
+    <!-- Video -->
+    <iframe class="w-full aspect-video rounded-lg shadow-lg" 
+            src="https://www.youtube.com/embed/VIDEO_ID1" 
+            title="Tutorial Pertama - Ustadz Firanda"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+      <!-- Video 1 -->
+<div class="bg-white/10 backdrop-blur-md rounded-xl shadow-lg overflow-hidden">
+  <button class="w-full text-left px-4 py-3 font-semibold text-purple-300 flex justify-between items-center toggle-btn">
+    Tutorial Pertama <span class="text-sm text-gray-400">Klik untuk buka/tutup</span>
+  </button>
+  <div class="video-content p-4 space-y-4">
+    <!-- Penjelasan Nahwu -->
+    <div class="bg-gray-900/40 rounded-lg p-4 text-gray-200">
+      <h4 class="text-lg font-semibold text-green-400 mb-2">📖 Penjelasan Singkat</h4>
+      <p class="leading-relaxed">
+        Pada tutorial pertama ini dibahas dasar-dasar <strong>nahwu</strong>, 
+        khususnya pengenalan <em>isim</em> (kata benda) dan <em>fi‘il</em> (kata kerja). 
+        Dengan memahami keduanya, kita bisa mulai mengenali struktur kalimat sederhana 
+        dalam bahasa Arab.
+      </p>
+    </div>
+
+    <!-- Video -->
+    <iframe class="w-full aspect-video rounded-lg shadow-lg" 
+            src="https://www.youtube.com/embed/VIDEO_ID1" 
+            title="Tutorial Pertama - Ustadz Firanda"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+
+
+      <!-- Tambahkan video lain dengan pola yang sama -->
+    </div>
+  </section>
+</main>
+
+    <footer class="bg-gray-900 text-gray-400 py-10">
+      <div class="mb-20">
+          <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+              <!-- Branding -->
+              <div>
+                <h2 class="text-xl font-bold text-white mb-2">Exa Edu-Smart</h2>
+                <p class="text-sm">Web pembelajaran bahasa arab</p>
+              </div>
+          
+              <!-- Social Media -->
+              <div>
+                <h3 class="text-white font-semibold mb-4">Terhubung</h3>
+                <div class="flex justify-center md:justify-start space-x-4">
+                  <a href="mailto:belajarhost899@gmail.com" class="hover:text-white transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 13.065l-11.99-7.065v13.065h23.98v-13.065l-11.99 7.065zm11.99-9.065h-23.98l11.99 7.065 11.99-7.065z"/>
+                    </svg>
+                  </a>
+                  <a href="https://instagram.com" target="_blank" class="hover:text-white transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0 1.837c-3.17 0-3.548.012-4.796.07-1.042.048-1.61.218-1.985.362-.5.195-.857.43-1.233.806-.376.376-.611.733-.806 1.233-.144.375-.314.943-.362 1.985-.058 1.248-.07 1.626-.07 4.796s.012 3.548.07 4.796c.048 1.042.218 1.61.362 1.985.195.5.43.857.806 1.233.376.376.733.611 1.233.806.375.144.943.314 1.985.362 1.248.058 1.626.07 4.796.07s3.548-.012 4.796-.07c1.042-.048 1.61-.218 1.985-.362.5-.195.857-.43 1.233-.806.376-.376.611-.733.806-1.233.144-.375.314-.943.362-1.985.058-1.248.07-1.626.07-4.796s-.012-3.548-.07-4.796c-.048-1.042-.218-1.61-.362-1.985-.195-.5-.43-.857-.806-1.233-.376-.376-.733-.611-1.233-.806-.375-.144-.943-.314-1.985-.362-1.248-.058-1.626-.07-4.796-.07zm0 4.838a5.002 5.002 0 100 10.004 5.002 5.002 0 000-10.004zm0 8.167a3.165 3.165 0 110-6.33 3.165 3.165 0 010 6.33zm6.406-8.845a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/>
+                    </svg>
+                  </a>
+                  <a href="https://twitter.com" target="_blank" class="hover:text-white transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M23.954 4.569c-.885.392-1.83.656-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.949.555-2.005.959-3.127 1.184-.897-.959-2.178-1.555-3.594-1.555-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124-4.087-.205-7.713-2.164-10.141-5.144-.422.722-.666 1.561-.666 2.475 0 1.708.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.229-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.6 3.419-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 14-7.496 14-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Bottom Line -->
+    <div class="mt-10 text-center text-sm text-gray-500 border-t border-gray-700 pt-4">
+      &copy; 2025 Exa Team. 
+      <a href="https://share.google/OTMCqaAea3aOcWK6S" class="text-semibold text-white hover:text-green-400">
+        Hak cipta dilindungi.
+      </a>
+    </div>
+  </footer>
+
+  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/donasi.js"></script>
+  <script src="./js/text-run.js"></script>
+  <script src="./js/loading.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    disable: function () {
+        var maxWidth = 600;
+        return window.innerWidth < maxWidth;
+    }
+});
+  </script>
+  <script>
+    // Toggle tiap video
+    document.querySelectorAll('.toggle-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        content.classList.toggle('hidden');
+      });
+    });
+  
+    // Toggle semua video
+    const toggleAllBtn = document.getElementById('toggleAllBtn');
+    let allVisible = true;
+    toggleAllBtn.addEventListener('click', () => {
+      document.querySelectorAll('.video-content').forEach(content => {
+        if (allVisible) {
+          content.classList.add('hidden');
+        } else {
+          content.classList.remove('hidden');
+        }
+      });
+      allVisible = !allVisible;
+      toggleAllBtn.textContent = allVisible ? "Sembunyikan Semua Video" : "Tampilkan Semua Video";
+    });
+  </script>
+</body>
+</html>
