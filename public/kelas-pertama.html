@@ -99,73 +99,113 @@
   </div>
 </header>
 
-<main class="mx-auto min-h-screen px-6 py-20 pt-32 space-y-16">
-  <!-- Hero Section -->
-  <section class="text-center space-y-4">
-    <div data-aos="fade-up">
-      <h1 class="text-4xl md:text-5xl font-extrabold text-green-400 drop-shadow-lg">
-        Kelas Pertama
-      </h1>
-      <h2 class="subtitle text-xl md:text-2xl text-gray-300">
-        Belajar Bahasa Arab untuk Pemula
-      </h2>
-    </div>
-  </section>
+<main id="heroSection" class="relative min-h-screen text-white overflow-hidden">
+  <video autoplay muted loop playsinline 
+         class="absolute inset-0 w-full h-full object-cover">
+    <source src="../assets/bg-video.mp4" type="video/mp4">
+    <img src="../assets/bg-fallback.jpg" 
+         alt="Background fallback" 
+         class="absolute inset-0 w-full h-full object-cover">
+  </video>
 
-  <!-- Mengapa Belajar -->
-  <section class="scroll-effect">
-    <div class="grid md:grid-cols-2 gap-10 items-center content-card mb-15 bg-white/5 backdrop-blur-md rounded-xl shadow-lg p-8" data-aos="fade-right">
-      
-      <!-- Teks -->
-      <div class="text-gray-300 space-y-4">
-        <h2 class="text-3xl font-bold text-green-400 mb-4">Mengapa Belajar Bahasa Arab?</h2>
-        <p>Bahasa Arab sebagai bahasa agama, bahasa integrasi dunia Arab, dan bahasa resmi PBB termasuk bahasa yang sangat layak dipelajari.</p>
-        <p>Manfaat belajar bahasa Arab tidak hanya untuk pengembangan kajian keislaman tetapi juga dalam pengembangan ilmu pengetahuan dan peradaban.</p>
-        <p>Bahasa Arab dan peradaban Islam sepanjang sejarahnya tidak dapat dipisahkan, mereka bagaikan dua sisi dari mata uang.</p>
-        <p>Di satu sisi bahasa Arab dapat maju karena Al-Qur’an, dan di sisi lain, bahasa Arab perlu dikembangkan sebagai ilmu karena dibutuhkan untuk melayani kajian Al-Qur’an.</p>
-        <p>Demikian pendapat para ahli bahasa yang mengatakan bahwa ilmu bahasa Arab dan keislaman dapat berkembang, karena inspirasi dan motivasi dari Al-Qur’an yang berbahasa Arab.</p>
-        <p class="font-semibold text-green-500">Dari penjelasan ini, kamu yang belajar bahasa Arab untuk pemula akan sangat termotivasi bukan?</p>
-      </div>
+  <div class="absolute inset-0 bg-black/50"></div>
 
-      <!-- Gambar -->
-      <div class="flex justify-center">
-        <img src="../assets/perkotaan.jpg" alt="Belajar Bahasa Arab" class="rounded-lg shadow-2xl w-full max-w-md hover:scale-105 transition-transform duration-500" data-aos="fade-left">
-      </div>
-    </div>
-  </section>
+<section class="relative z-10 flex flex-col items-start justify-start text-left px-6 py-32 pt-48 space-y-8 max-w-3xl">
+  <h1 class="text-5xl md:text-7xl font-extrabold text-green-400 drop-shadow-lg animate-pulse" data-aos="fade-down">
+    Kelas Pertama
+  </h1>
+  <p class="text-xl md:text-2xl text-gray-200 leading-relaxed" data-aos="fade-up">
+    Belajar Bahasa Arab untuk Pemula dengan cara 
+    <span class="text-green-400 font-semibold">menyenangkan</span>, 
+    <span class="text-purple-400 font-semibold">interaktif</span>, 
+    dan penuh motivasi.
+  </p>
+
+  <div class="flex flex-col sm:flex-row gap-4 mt-8" data-aos="zoom-in">
+    <a href="#mulai" 
+       class="px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-lg transition duration-300">
+      🚀 Mulai Belajar
+    </a>
+    <a href="#tentang" 
+       class="px-6 py-3 bg-white/20 hover:bg-white/30 text-green-400 font-semibold rounded-lg shadow-lg transition duration-300">
+      📖 Pelajari Lebih Lanjut
+    </a>
+  </div>
+</section>
 </main>
+
+
+
+
+
 
 
 
 <main class="bg-gray-200 text-purple-900 min-h-screen px-6 py-20 pt-32">
   <!-- Langkah Belajar -->
   <section class="scroll-effect">
-    <div class="content-card bg-green/10 backdrop-blur-md rounded-2xl shadow-2xl p-10 transition transform hover:scale-[1.01]" data-aos="fade-up">
+    <div class=" p-10 mb-5 " data-aos="fade-up">
       
       <!-- Judul -->
       <h2 class="text-3xl font-extrabold text-green-900 mb-6 text-center drop-shadow-lg">
-        🌟 Langkah Belajar Bahasa Arab untuk Pemula
+         Langkah Belajar Bahasa Arab untuk Pemula
       </h2>
 
-      <!-- Langkah-langkah -->
-      <ol class="arabic-steps list-decimal list-inside space-y-4 text-lg text-purple-900 leading-relaxed">
-        <li><strong class="text-green-800">Pelajari huruf hijaiyah / huruf arab</strong><br>Mulai dari Alif (ا) sampai Ya (ي).</li>
-        <li><strong class="text-green-800">Pelajari kosakata sehari-hari</strong><br>Pahami kata dasar yang digunakan dalam percakapan.</li>
-        <li><strong class="text-green-800">Pahami struktur dasar kalimat</strong><br>Kenali isim, fi'il, dan harf jar.</li>
-        <li><strong class="text-green-800">Berlatih komunikasi aktif</strong><br>Gunakan pengetahuan untuk berbicara dan mendengarkan.</li>
-        <li><strong class="text-green-800">Kembangkan kemampuan advance</strong><br>Latih dengan buku, soal online, atau kursus.</li>
-      </ol>
+      <section class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-2xl font-bold text-green-800 mb-6">Langkah Belajar Bahasa Arab untuk Pemula</h2>
+          <ol class="arabic-steps list-decimal list-inside space-y-4 text-lg text-purple-900 leading-relaxed">
+            <li><strong class="text-green-800">Pelajari huruf hijaiyah / huruf arab</strong><br>Mulai dari Alif (ا) sampai Ya (ي).</li>
+            <li><strong class="text-green-800">Pelajari kosakata sehari-hari</strong><br>Pahami kata dasar yang digunakan dalam percakapan.</li>
+            <li><strong class="text-green-800">Pahami struktur dasar kalimat</strong><br>Kenali isim, fi'il, dan harf jar.</li>
+            <li><strong class="text-green-800">Berlatih komunikasi aktif</strong><br>Gunakan pengetahuan untuk berbicara dan mendengarkan.</li>
+            <li><strong class="text-green-800">Kembangkan kemampuan advance</strong><br>Latih dengan buku, soal online, atau kursus.</li>
+          </ol>
+        </div>
+      
+        <div class="flex justify-center">
+          <img src="../assets/bg-arab1.jpg" 
+               alt="Ilustrasi Belajar Bahasa Arab" 
+               class="rounded-xl shadow-lg w-full max-w-md hover:scale-105 transition-transform duration-500">
+        </div>
+      </section>
+      
 
       <!-- Huruf Hijaiyah -->
-      <h3 class="mt-10 text-2xl font-semibold text-purple-900 border-b border-purple-500 pb-2">✍️ Contoh Huruf Hijaiyah</h3>
-      <div class="bg-green-500 hijaiyah-list mt-6 flex flex-wrap gap-3 justify-center">
-        <span class="bg-purple-700 text-white text-xl md:text-2xl rounded-lg px-4 py-2 shadow-md hover:scale-110 transition">ا</span>
-        <span class="bg-purple-700 text-white text-xl md:text-2xl rounded-lg px-4 py-2 shadow-md hover:scale-110 transition">ب</span>
-        <span class="bg-purple-700 text-white text-xl md:text-2xl rounded-lg px-4 py-2 shadow-md hover:scale-110 transition">ت</span>
-        <span class="bg-purple-700 text-white text-xl md:text-2xl rounded-lg px-4 py-2 shadow-md hover:scale-110 transition">ث</span>
-        <!-- ... lanjutkan semua huruf dengan pola yang sama ... -->
-        <span class="bg-purple-700 text-white text-xl md:text-2xl rounded-lg px-4 py-2 shadow-md hover:scale-110 transition">ي</span>
-      </div>
+<h3 class="mt-10 text-3xl font-extrabold text-center text-purple-900 drop-shadow-lg">
+  ✍️ Contoh Huruf Hijaiyah
+</h3>
+
+<div class="mt-8 grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-4 justify-items-center">
+  <!-- Contoh huruf -->
+  <span class="bg-gradient-to-br from-purple-600 to-purple-800 text-white text-2xl md:text-3xl 
+               rounded-xl px-5 py-4 shadow-lg transform hover:scale-110 hover:rotate-3 
+               transition duration-300 ease-out cursor-pointer">
+    ا
+  </span>
+  <span class="bg-gradient-to-br from-purple-600 to-purple-800 text-white text-2xl md:text-3xl 
+               rounded-xl px-5 py-4 shadow-lg transform hover:scale-110 hover:-rotate-3 
+               transition duration-300 ease-out cursor-pointer">
+    ب
+  </span>
+  <span class="bg-gradient-to-br from-purple-600 to-purple-800 text-white text-2xl md:text-3xl 
+               rounded-xl px-5 py-4 shadow-lg transform hover:scale-110 hover:rotate-3 
+               transition duration-300 ease-out cursor-pointer">
+    ت
+  </span>
+  <span class="bg-gradient-to-br from-purple-600 to-purple-800 text-white text-2xl md:text-3xl 
+               rounded-xl px-5 py-4 shadow-lg transform hover:scale-110 hover:-rotate-3 
+               transition duration-300 ease-out cursor-pointer">
+    ث
+  </span>
+  <!-- ... lanjutkan semua huruf dengan pola yang sama ... -->
+  <span class="bg-gradient-to-br from-purple-600 to-purple-800 text-white text-2xl md:text-3xl 
+               rounded-xl px-5 py-4 shadow-lg transform hover:scale-110 hover:rotate-3 
+               transition duration-300 ease-out cursor-pointer">
+    ي
+  </span>
+</div>
+
 
       <!-- Contoh Kalimat -->
       <h3 class="mt-10 text-2xl font-semibold text-purple-900 border-b border-purple-500 pb-2">📖 Contoh Kalimat Arab</h3>
@@ -230,7 +270,7 @@
 
     <!-- Video -->
     <iframe class="w-full aspect-video rounded-lg shadow-lg" 
-            src="https://www.youtube.com/embed/VIDEO_ID1" 
+            src="https://www.youtube.com/embed/cPzwvwvfvwQ?si=4dTBWY5j7pCIyuFO" 
             title="Tutorial Pertama - Ustadz Firanda"
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -320,6 +360,7 @@
   <script src="./js/donasi.js"></script>
   <script src="./js/text-run.js"></script>
   <script src="./js/loading.js"></script>
+  <script src="./js/iklan.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -340,7 +381,7 @@
   
     // Toggle semua video
     const toggleAllBtn = document.getElementById('toggleAllBtn');
-    let allVisible = true;
+    let allVisible = false;
     toggleAllBtn.addEventListener('click', () => {
       document.querySelectorAll('.video-content').forEach(content => {
         if (allVisible) {
