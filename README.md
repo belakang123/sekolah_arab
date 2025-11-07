@@ -4,7 +4,7 @@
 
 Kami mengundang Anda untuk menguji *landing page* *Exa Edu-Smart* yang saat ini **MASIH DALAM TAHAP PENGEMBANGAN**.
 
-*Kunjungi di sini:* https://belakang123.github.io/sekolah_arab/index.html
+*Kunjungi di sini:* https://belakang123.github.io/ExaEduSmart/
 
 Situs ini adalah prototipe pembelajaran bahasa Arab modern dengan fokus pada *Nahwu* dan *Hafalan*.
 
